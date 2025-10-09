@@ -143,6 +143,244 @@ st.markdown("""
         box-shadow: 2px 0 10px rgba(0,0,0,0.1);
     }
     
+    
+    /* 特别针对radio按钮的样式 */
+    [data-testid="stSidebar"] .stRadio {
+        width: 100% !important;
+        margin: 0 !important;
+    }
+    
+    [data-testid="stSidebar"] .stRadio > div {
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    
+    [data-testid="stSidebar"] .stRadio > div > div {
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    
+    [data-testid="stSidebar"] .stRadio > div > div > label {
+        width: 100% !important;
+        margin: 0.2rem 0 !important;
+        padding: 0.8rem 1rem !important;
+        box-sizing: border-box !important;
+        display: flex !important;
+        align-items: center !important;
+        gap: 0.8rem !important;
+        border-radius: 8px !important;
+        transition: all 0.3s ease !important;
+    }
+    
+    
+    /* 侧边栏内容适配 - 使用更简单的选择器 */
+    [data-testid="stSidebar"] .stMarkdown {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+    
+    [data-testid="stSidebar"] .stRadio {
+        width: 100% !important;
+    }
+    
+    [data-testid="stSidebar"] .stRadio > div {
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    
+    [data-testid="stSidebar"] .stRadio > div > label {
+        width: 100% !important;
+        padding: 0.8rem 1rem !important;
+        margin: 0.2rem 0 !important;
+        border-radius: 10px !important;
+        transition: all 0.3s ease !important;
+        box-sizing: border-box !important;
+        display: flex !important;
+        align-items: center !important;
+        gap: 0.8rem !important;
+    }
+    
+    /* 调整侧边栏内容的内边距 */
+    [data-testid="stSidebar"] .element-container {
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 0.3rem !important;
+    }
+    
+    .sidebar .stRadio > div > label:hover {
+        background-color: rgba(76, 175, 80, 0.1) !important;
+        transform: translateX(5px) !important;
+    }
+    
+    .sidebar .stRadio > div > label[data-testid="stRadio"] {
+        background-color: rgba(76, 175, 80, 0.15) !important;
+    }
+    
+    /* 侧边栏标题样式 */
+    .sidebar h1 {
+        font-size: 1.2rem !important;
+        line-height: 1.3 !important;
+        margin-bottom: 1rem !important;
+    }
+    
+    .sidebar h3 {
+        font-size: 1rem !important;
+        margin-top: 1.5rem !important;
+        margin-bottom: 0.8rem !important;
+        color: #2E8B57 !important;
+        font-weight: 600 !important;
+    }
+    
+    /* 侧边栏输入框适配 */
+    .sidebar .stTextInput > div > div > input {
+        width: 100% !important;
+        font-size: 0.9rem !important;
+    }
+    
+    /* 侧边栏按钮适配 */
+    .sidebar .stButton > button {
+        width: 100% !important;
+        font-size: 0.9rem !important;
+        padding: 0.5rem 1rem !important;
+    }
+    
+    /* 侧边栏警告框和成功框适配 */
+    .sidebar .warning-box,
+    .sidebar .success-box {
+        width: 100% !important;
+        font-size: 0.85rem !important;
+        padding: 0.6rem !important;
+        margin: 0.5rem 0 !important;
+    }
+    
+    /* 侧边栏展开器适配 */
+    .sidebar .stExpander {
+        width: 100% !important;
+    }
+    
+    .sidebar .stExpander > div {
+        width: 100% !important;
+    }
+    
+    /* 侧边栏分隔线样式 */
+    .sidebar hr {
+        margin: 1.5rem 0 !important;
+        border: none !important;
+        height: 2px !important;
+        background: linear-gradient(90deg, transparent, #3CB371, transparent) !important;
+    }
+    
+    /* 侧边栏容器内边距调整 */
+    .sidebar .stContainer {
+        padding: 0 !important;
+    }
+    
+    /* 侧边栏主容器样式 */
+    .sidebar .css-1d391kg {
+        padding: 1rem 0.5rem !important;
+    }
+    
+    /* 确保所有侧边栏元素都占满宽度 */
+    .sidebar .stMarkdown,
+    .sidebar .stTextInput,
+    .sidebar .stButton,
+    .sidebar .stExpander {
+        width: 100% !important;
+        margin: 0 !important;
+    }
+    
+    /* 特别针对导航菜单的容器 */
+    .sidebar .element-container:has(.stRadio) {
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    
+    /* 侧边栏滚动条样式 */
+    .sidebar::-webkit-scrollbar {
+        width: 6px !important;
+    }
+    
+    .sidebar::-webkit-scrollbar-track {
+        background: rgba(0,0,0,0.1) !important;
+        border-radius: 3px !important;
+    }
+    
+    .sidebar::-webkit-scrollbar-thumb {
+        background: #3CB371 !important;
+        border-radius: 3px !important;
+    }
+    
+    .sidebar::-webkit-scrollbar-thumb:hover {
+        background: #2E8B57 !important;
+    }
+    
+    /* 侧边栏响应式调整 */
+    @media (max-width: 768px) {
+        .sidebar .sidebar-content {
+            width: 280px !important;
+            min-width: 280px !important;
+        }
+        
+        .css-1d391kg {
+            width: 280px !important;
+        }
+        
+        .css-1cypcdb {
+            width: 280px !important;
+        }
+    }
+    
+    /* 侧边栏菜单项选中状态优化 */
+    .sidebar .stRadio > div > label[data-testid="stRadio"]:has(input:checked) {
+        background: linear-gradient(135deg, #4CAF50 0%, #3e8e41 100%) !important;
+        color: white !important;
+        font-weight: 600 !important;
+        box-shadow: 0 2px 8px rgba(76, 175, 80, 0.3) !important;
+    }
+    
+    /* 侧边栏菜单项图标和文字间距 */
+    .sidebar .stRadio > div > label {
+        display: flex !important;
+        align-items: center !important;
+        gap: 0.8rem !important;
+    }
+    
+    /* 强制菜单项占满整个侧边栏宽度 */
+    .sidebar .stRadio {
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    
+    .sidebar .stRadio > div {
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    
+    /* 确保菜单项标签占满容器宽度 */
+    .sidebar .stRadio > div > label {
+        width: 100% !important;
+        margin: 0.2rem 0 !important;
+        padding: 0.8rem 1rem !important;
+        box-sizing: border-box !important;
+    }
+    
+    /* 移除侧边栏的默认内边距 */
+    .sidebar .css-1d391kg .css-1cypcdb {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    
+    /* 调整侧边栏内容区域 */
+    .sidebar .css-1d391kg {
+        padding: 1rem 0.3rem !important;
+    }
+    
     .divider {
         height: 2px;
         background: linear-gradient(90deg, transparent, #3CB371, transparent);
@@ -280,6 +518,28 @@ st.markdown("""
         font-size: 0.95rem;
     }
 </style>
+
+<script>
+// 确保侧边栏样式正确应用
+setTimeout(function() {
+    const sidebar = document.querySelector('[data-testid="stSidebar"]');
+    if (sidebar) {
+        // 确保所有radio按钮占满宽度
+        const radioButtons = sidebar.querySelectorAll('.stRadio > div > div > label');
+        radioButtons.forEach(function(button) {
+            button.style.width = '100%';
+            button.style.boxSizing = 'border-box';
+            button.style.display = 'flex';
+            button.style.alignItems = 'center';
+            button.style.gap = '0.8rem';
+            button.style.padding = '0.8rem 1rem';
+            button.style.margin = '0.2rem 0';
+            button.style.borderRadius = '8px';
+        });
+    }
+    
+}, 100);
+</script>
 """, unsafe_allow_html=True)
 
 # 初始化会话状态
@@ -338,12 +598,16 @@ with st.sidebar:
         "电子农场": "🌾"
     }
     
-    page = st.radio(
-        "选择功能",
-        options=list(nav_options.keys()),
-        format_func=lambda x: f"{nav_options[x]} {x}",
-        label_visibility="collapsed"
-    )
+    # 使用容器来更好地控制导航菜单的布局
+    with st.container():
+        st.markdown('<div style="margin-bottom: 1rem;"></div>', unsafe_allow_html=True)
+        page = st.radio(
+            "选择功能",
+            options=list(nav_options.keys()),
+            format_func=lambda x: f"{nav_options[x]} {x}",
+            label_visibility="collapsed",
+            key="main_navigation"
+        )
     
     
     # 使用说明
