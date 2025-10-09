@@ -2802,15 +2802,15 @@ with col2:
             st.markdown("""
             ### 作者信息
             
-            **开发人员:** 吴东吉(AJower)、赵佳凝、宋信函、周昶、史展旭
+            **开发人员:** AJower
             
             **联系方式:**
             - 📧 邮箱: AJower@163.com
             - 📞 QQ: 3175268324
                         
             **下载方式:**
-            - 🌐 开源仓库: https://gitee.com/ajower/cmsp1.1
-            - 🌐 百度网盘:  https://pan.baidu.com/s/11PHZnSJapvZggF9cKqK72Q?pwd=42tq
+            - 🌐 开源仓库: 请联系作者
+            - 🌐 百度网盘: 请联系作者
             
             **技术支持:**
             - 如果您有任何问题或建议，请通过以上方式联系我们
@@ -2823,4 +2823,4 @@ with col2:
 
             """)
 
-st.markdown('<div style="text-align: center; color: #6c757d; padding: 1.5rem;">农作物健康管理系统 V1.2.1 © 2025</div>', unsafe_allow_html=True)
+st.markdown('<div style="text-align: center; color: #6c757d; padding: 1.5rem;">农作物健康管理系统 V1.2.5 © 2025</div>', unsafe_allow_html=True)
