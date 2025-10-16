@@ -1424,7 +1424,7 @@ elif page == "视频分析":
 elif page == "历史记录":
     st.markdown('<div class="main-header">📊 分析历史记录</div>', unsafe_allow_html=True)
     
-    if st.button("刷新历史记录", icon="🔄"):
+    if st.button("🔄 刷新历史记录"):
         st.session_state.history = get_history(20)
         st.success("历史记录已刷新")
     
